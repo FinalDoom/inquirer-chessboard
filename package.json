@@ -71,16 +71,16 @@
     "test": ""
   },
   "dependencies": {
-    "@inquirer/core": "^8.2.4",
-    "@inquirer/type": "^1.5.5",
-    "ansi-escapes": "^4.3.2",
-    "chalk": "^4.1.2",
+    "@inquirer/core": "^10.1.2",
+    "@inquirer/type": "^3.0",
+    "ansi-escapes": "^7.0.0",
+    "chalk": "^5.4.1",
     "cli-table": "^0.3.11",
     "figures": "^6.1.0",
     "strip-ansi": "^7.1.0"
   },
   "devDependencies": {
-    "@sindresorhus/tsconfig": "^5.1.1",
+    "@sindresorhus/tsconfig": "^7.0.0",
     "@types/cli-table": "^0.3.4",
     "@typescript-eslint/eslint-plugin": "^8.19.0",
     "@typescript-eslint/parser": "^8.19.0",
@@ -89,6 +89,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "renamer": "^5.0.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   },
   "publishConfig": {
