@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/FinalDoom/inquirer-chessboard.git"
+    "url": "git+https://github.com/FinalDoom/inquirer-chessboard.git"
   },
   "keywords": [
     "answer",
@@ -66,21 +66,30 @@
     "tsc:esm": "rm -rf dist/esm && tsc -p ./tsconfig.json",
     "tsc:cjs": "rm -rf dist/cjs && tsc -p ./tsconfig.cjs.json && npx renamer --silent --path-element ext --find '/m([jt]s)/' --replace '$1' './dist/cjs/**/*.m?s'",
     "prepare": "npm run tsc",
+    "lint": "tsc --noEmit && eslint --quiet --fix",
+    "example": "npm run tsc && npx tsx example/foobar.ts",
     "test": ""
   },
   "dependencies": {
-    "@inquirer/core": "^8.2.4",
-    "@inquirer/type": "^1.5.5",
-    "@sindresorhus/tsconfig": "^5.1.1",
-    "@types/cli-table": "^0.3.4",
-    "ansi-escapes": "^4.3.2",
-    "chalk": "^4.1.2",
+    "@inquirer/core": "^10.1.2",
+    "@inquirer/type": "^3.0",
+    "ansi-escapes": "^7.0.0",
+    "chalk": "^5.4.1",
     "cli-table": "^0.3.11",
     "figures": "^6.1.0",
     "strip-ansi": "^7.1.0"
   },
   "devDependencies": {
+    "@sindresorhus/tsconfig": "^7.0.0",
+    "@types/cli-table": "^0.3.4",
+    "@typescript-eslint/eslint-plugin": "^8.19.0",
+    "@typescript-eslint/parser": "^8.19.0",
+    "eslint": "^9.17.0",
+    "eslint-config-love": "^114.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "renamer": "^5.0.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   },
   "publishConfig": {
