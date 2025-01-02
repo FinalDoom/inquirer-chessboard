@@ -18,8 +18,8 @@ importers:
         specifier: ^4.3.2
         version: 4.3.2
       chalk:
-        specifier: ^4.1.2
-        version: 4.1.2
+        specifier: ^5.4.1
+        version: 5.4.1
       cli-table:
         specifier: ^0.3.11
         version: 0.3.11

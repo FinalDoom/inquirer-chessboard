@@ -72,7 +72,7 @@
     "@inquirer/core": "^8.2.4",
     "@inquirer/type": "^1.5.5",
     "ansi-escapes": "^4.3.2",
-    "chalk": "^4.1.2",
+    "chalk": "^5.4.1",
     "cli-table": "^0.3.11",
     "figures": "^6.1.0",
     "strip-ansi": "^7.1.0"
