@@ -31,8 +31,8 @@ importers:
         version: 7.1.0
     devDependencies:
       '@sindresorhus/tsconfig':
-        specifier: ^5.1.1
-        version: 5.1.1
+        specifier: ^7.0.0
+        version: 7.0.0
       '@types/cli-table':
         specifier: ^0.3.4
         version: 0.3.4
@@ -76,8 +76,8 @@ packages:
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
 
-  '@sindresorhus/tsconfig@5.1.1':
-    resolution: {integrity: sha512-+2oF5II0d+0qKykD4GoM6hak0fpBgBMlQjpMF/xKReztc9MTMeldESdbhHo0rI/Iq3cEuhPy4/RStYbVFtWfog==}
+  '@sindresorhus/tsconfig@7.0.0':
+    resolution: {integrity: sha512-i5K04hLAP44Af16zmDjG07E1NHuDgCM07SJAT4gY0LZSRrWYzwt4qkLem6TIbIVh0k51RkN2bF+lP+lM5eC9fw==}
     engines: {node: '>=18'}
 
   '@types/cli-table@0.3.4':
@@ -403,7 +403,7 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
-  '@sindresorhus/tsconfig@5.1.1': {}
+  '@sindresorhus/tsconfig@7.0.0': {}
 
   '@types/cli-table@0.3.4': {}
 
