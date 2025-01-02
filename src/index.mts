@@ -18,6 +18,7 @@ import {
 } from '@inquirer/core';
 import ansiEscapes from 'ansi-escapes';
 import type {PartialDeep} from "@inquirer/type";
+import stripAnsi from "strip-ansi";
 
 type ChessboardTheme = {
     icon: {
@@ -88,13 +89,18 @@ function addOptionsToTable(table: Table, options: string[]) {
 function validateConfig<Value>(config: Config<Value>, theme: ChessboardTheme) {
     const {options, columns, columnLabels, rows, rowLabels} = config;
     if (options.length > theme.icon.optionsList.length) {
-        console.warn("More config.options passed than can be displayed with config.theme.icon.optionsList icons.")
+        console.warn("More config.options passed than can be displayed with config.theme.icon.optionsList icons.");
     }
     if (columnLabels !== undefined && columns !== columnLabels.length) {
-        console.warn(`Incorrect number of columns labels passed (should equal columns: ${columns})`)
+        console.warn(`Incorrect number of columns labels passed (should equal columns: ${columns})`);
     }
     if (rowLabels !== undefined && rows !== rowLabels.length) {
-        console.warn(`Incorrect number of row labels passed (should equal rows: ${rows})`)
+        console.warn(`Incorrect number of row labels passed (should equal rows: ${rows})`);
+    }
+    if (stripAnsi(theme.style.selectedCell('a')).length !== stripAnsi(theme.style.unselectedCell('a')).length) {
+        console.warn(`Selected and unselected cell style should result in same length for best display`);
+        console.warn(theme.style.selectedCell('a').length, theme.style.unselectedCell('a'));
+        console.warn(theme.style.unselectedCell('a').length, theme.style.unselectedCell('a'));
     }
 }
 
