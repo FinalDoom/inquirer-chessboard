@@ -1,0 +1,10 @@
+{
+  "extends": "@sindresorhus/tsconfig",
+  "include": ["src"],
+  "ts-node": {
+    "esm": true
+  },
+  "compilerOptions": {
+    "esModuleInterop": true
+  }
+}
