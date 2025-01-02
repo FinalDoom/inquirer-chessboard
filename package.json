@@ -71,6 +71,8 @@
   "dependencies": {
     "@inquirer/core": "^8.2.4",
     "@inquirer/type": "^1.5.5",
+    "@sindresorhus/tsconfig": "^5.1.1",
+    "@types/cli-table": "^0.3.4",
     "ansi-escapes": "^4.3.2",
     "chalk": "^4.1.2",
     "cli-table": "^0.3.11",
@@ -78,9 +80,6 @@
     "strip-ansi": "^7.1.0"
   },
   "devDependencies": {
-    "@sindresorhus/tsconfig": "^5.1.1",
-    "@types/cli-table": "^0.3.4",
-    "globby": "^14.0.2",
     "renamer": "^5.0.2",
     "typescript": "^5.7.2"
   },
