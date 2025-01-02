@@ -7,4 +7,4 @@ chessboard({
     columns: 3,
     rows: 3,
     options: options.map((option) => ({name: option, value: option})),
-}).then((_) => {})
+})
